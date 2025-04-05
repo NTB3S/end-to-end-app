@@ -12,5 +12,5 @@
     }
   ],
   "branchPrefix": "renovate/",
-  "baseBranches": ["app/rest-json-quickstart"]
+  "baseBranches": ["chart/rest-json-quickstart"]
 }
