@@ -1,5 +1,4 @@
 {
-  "extends": ["config:recommended"],
   "regexManagers": [
     {
       "fileMatch": ["values.yaml"],
