@@ -5,5 +5,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 5,
   "branchPrefix": "renovate/",
-  "baseBranches": ["chart/rest-json-quickstart", "app/*"]
+  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"]
 }
