@@ -3,5 +3,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 0,
   "branchPrefix": "renovate/",
+  "enabledManagers": ["helmv3", "maven"],
   "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"]
 }
