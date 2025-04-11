@@ -8,16 +8,13 @@
   "packageRules": [
     {
       "matchBaseBranches": ["chart/rest-json-quickstart"],
-      "matchManagers": ["helmv3"]
-    },
-    {
-      "matchBaseBranches": ["/^app\\/.*/"],
-      "matchManagers": ["helmv3"]
+      "matchManagers": ["helmv3"],
+      "enabled": true
     },
     {
       "matchBaseBranches": ["/^app\\/.*/"],
       "matchManagers": ["maven"],
-      "enabled": false
+      "enabled": true
     }
   ]
 }
