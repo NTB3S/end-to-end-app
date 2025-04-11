@@ -3,16 +3,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 0,
   "branchPrefix": "renovate/",
-  "enabledManagers": ["helmv3", "maven"],
-  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
-  "packageRules": [
-    {
-      "matchBaseBranches": ["chart/rest-json-quickstart"],
-      "matchManagers": ["helmv3"]
-    },
-    {
-      "matchBaseBranches": ["/^app\\/.*/"],
-      "matchManagers": ["maven"]
-    }
-  ]
+  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"]
 }
