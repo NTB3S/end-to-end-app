@@ -9,10 +9,6 @@
     {
       "matchBaseBranches": ["chart/rest-json-quickstart"],
       "matchManagers": ["helmv3"]
-    },
-    {
-      "matchBaseBranches": ["/^app\\/.*/"],
-      "matchManagers": ["maven"]
     }
   ]
 }
