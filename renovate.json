@@ -1,10 +1,17 @@
 {
-   "extends": [
-     "config:recommended"
-   ],
+  "extends": ["config:recommended"],
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 10,
   "branchPrefix": "renovate/",
   "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
-  "enabledManagers": ["helmv3"]
+  "packageRules": [
+    {
+      "matchBaseBranches": ["chart/rest-json-quickstart"],
+      "enabledManagers": ["helmv3"]
+    },
+    {
+      "matchBaseBranches": ["/^app\\/.*/"],
+      "enabledManagers": ["helmv3"]
+    }
+  ]
 }
