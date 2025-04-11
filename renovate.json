@@ -5,5 +5,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 5,
   "branchPrefix": "renovate/",
-  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"]
+  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
+  "regexManagers": [
+    {
+      "fileMatch": ["values.yaml"],
+      "matchStrings": [
+        "image: docker\\.io/sbstnsz/rest-json-quickstart:(?<currentValue>.*)"
+      ],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "sbstnsz/rest-json-quickstart",
+      "versioningTemplate": "semver"
+    }
+  ],
 }
