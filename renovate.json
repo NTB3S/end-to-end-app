@@ -8,6 +8,10 @@
     {
       "matchBaseBranches": ["chart/rest-json-quickstart"],
       "enabledManagers": ["helmv3"]
+    },
+    {
+      "matchBaseBranches": ["/^app\\/.*/"],
+      "enabledManagers": ["helmv3"]
     }
   ]
 }
