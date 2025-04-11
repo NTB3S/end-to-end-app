@@ -6,5 +6,5 @@
   "prHourlyLimit": 10,
   "branchPrefix": "renovate/",
   "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
-  "enabledManagers": ["dockerfile"]
+  "enabledManagers": []
 }
