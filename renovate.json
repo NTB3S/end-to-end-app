@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "matchBaseBranches": ["chart/rest-json-quickstart"],
-      "enabledManagers": ["maven"]
+      "enabledManagers": ["helmv3"]
     },
     {
       "matchBaseBranches": ["/^app\\/.*/"],
