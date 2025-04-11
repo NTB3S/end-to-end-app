@@ -3,7 +3,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 0,
   "branchPrefix": "renovate/",
-  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
   "packageRules": [
     {
       "matchBaseBranches": ["chart/rest-json-quickstart"],
