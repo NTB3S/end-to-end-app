@@ -3,7 +3,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 0,
   "branchPrefix": "renovate/",
-  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
   "enabledManagers": ["helmv3", "maven"],
   "packageRules": [
     {
@@ -12,7 +11,7 @@
     },
     {
       "matchBaseBranches": ["/^app\\/.*/"],
-      "matchManagers": ["maven"]
+      "matchManagers": ["helmv3"]
     }
   ]
 }
