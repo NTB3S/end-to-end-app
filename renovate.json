@@ -11,8 +11,7 @@
     },
     {
       "matchBaseBranches": ["/^app\\/.*/"],
-      "enabledManagers": ["helmv3"],
-      "disabledManagers": ["maven"]
+      "enabledManagers": ["helmv3"]
     }
   ]
 }
