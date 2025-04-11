@@ -12,7 +12,8 @@
     },
     {
       "matchBaseBranches": ["/^app\\/.*/"],
-      "matchManagers": ["maven"]
+      "matchManagers": ["maven"],
+      "enabled": false
     }
   ]
 }
