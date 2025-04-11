@@ -4,11 +4,5 @@
   "prHourlyLimit": 0,
   "branchPrefix": "renovate/",
   "enabledManagers": ["helmv3", "maven"],
-  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
-  "packageRules": [
-    {
-      "matchBaseBranches": ["chart/rest-json-quickstart"],
-      "matchManagers": ["helmv3"]
-    }
-  ]
+  "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"]
 }
