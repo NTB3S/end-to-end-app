@@ -13,6 +13,11 @@
     {
       "matchBaseBranches": ["/^app\\/.*/"],
       "matchManagers": ["helmv3"]
+    },
+    {
+      "matchBaseBranches": ["/^app\\/.*/"],
+      "matchManagers": ["maven"]
+      "enabled": false
     }
   ]
 }
