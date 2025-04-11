@@ -1,4 +1,4 @@
-{
+m{
   "extends": ["config:recommended"],
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "prHourlyLimit": 10,
@@ -11,7 +11,7 @@
     },
     {
       "matchBaseBranches": ["/^app\\/.*/"],
-      "enabledManagers": ["maven"]
+      "enabledManagers": ["helmv3"]
     }
   ]
 }
