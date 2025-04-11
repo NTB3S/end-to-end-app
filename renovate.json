@@ -3,7 +3,7 @@
      "config:recommended"
    ],
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "prHourlyLimit": 5,
+  "prHourlyLimit": 8,
   "branchPrefix": "renovate/",
   "baseBranches": ["chart/rest-json-quickstart", "/^app\\/.*/"],
   "regexManagers": [
