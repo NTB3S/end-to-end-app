@@ -51,5 +51,5 @@ jobs:
           REPO_OWNER_LC=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           
           # Push the chart to GitHub Packages with proper formatting
-          echo "Pushing to: oci://ghcr.io/${REPO_OWNER_LC}/end-to-end-charts"
+          echo "Pushing to: oci://ghcr.io/${REPO_OWNER_LC}/charts"
           helm push "${CHART_NAME}-${CHART_VERSION}.tgz" "oci://ghcr.io/${REPO_OWNER_LC}/charts"
