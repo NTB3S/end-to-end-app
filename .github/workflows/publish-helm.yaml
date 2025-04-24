@@ -1,14 +1,17 @@
 name: Publish Helm Chart
 
 on:
-  push:
-    branches: [ "chart/rest-json-quickstart" ]
+  workflow_dispatch:
+    inputs:
+      deploy:
+        required: false
+        default: false
+        type: boolean
     paths:
       - 'Chart.yaml'
       - 'values.yaml'
       - 'templates/**'
       - '.helmignore'
-  workflow_dispatch:
 
 jobs:
   publish:
