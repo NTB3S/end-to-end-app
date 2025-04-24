@@ -32,7 +32,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Set maven version
-      if : !startsWith(github.ref, 'app/')
+      if : ${{ !startsWith(github.ref, 'refs/heads/app/') }}
       run: mvn versions:set -DnewVersion=${GITHUB_REF##*/}-SNAPSHOT -DgenerateBackupPoms=false
 
     - name: Build with Maven
