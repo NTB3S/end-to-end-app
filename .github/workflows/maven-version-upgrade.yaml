@@ -2,7 +2,7 @@ name: Increment Version on PR
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
     branches:
       - 'app/**'  # Action s'exécute pour les PR depuis toute branche commençant par app/
       
