@@ -66,3 +66,5 @@ jobs:
           git add pom.xml
           git commit -m "Increment version patch to ${{ env.NEW_VERSION }}"
           git push origin HEAD:${{ github.head_ref }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
