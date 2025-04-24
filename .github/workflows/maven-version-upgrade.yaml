@@ -1,0 +1,41 @@
+name: Increment Version on PR
+
+on:
+  pull_request:
+    branches: [ "app/*" ]
+
+jobs:
+  increment-version:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+      
+      - name: Increment Patch Version
+        run: |
+          # Récupérer la version actuelle du pom.xml
+          CURRENT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "Version actuelle: $CURRENT_VERSION"
+          
+          # Incrémenter la version patch
+          mvn versions:set -DnextSnapshot=false -DgenerateBackupPoms=false
+          
+          # Récupérer la nouvelle version
+          NEW_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "Nouvelle version: $NEW_VERSION"
+      
+      - name: Commit et Push
+        run: |
+          git add pom.xml
+          git commit -m "Increment version to $(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)"
+          git push origin HEAD:${{ github.head_ref }}
